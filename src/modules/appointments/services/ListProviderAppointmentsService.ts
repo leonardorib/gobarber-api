@@ -1,10 +1,10 @@
-import { injectable, inject } from 'tsyringe';
+import { injectable, inject } from "tsyringe";
 
-import Appointment from '../infra/typeorm/entities/Appointment';
-import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
-import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
-import { ApiGatewayManagementApi } from 'aws-sdk';
-import { classToClass } from 'class-transformer';
+import Appointment from "../infra/typeorm/entities/Appointment";
+import IAppointmentsRepository from "../repositories/IAppointmentsRepository";
+import ICacheProvider from "@shared/container/providers/CacheProvider/models/ICacheProvider";
+import { ApiGatewayManagementApi } from "aws-sdk";
+import { classToClass } from "class-transformer";
 
 interface IRequest {
   provider_id: string;
@@ -16,10 +16,10 @@ interface IRequest {
 @injectable()
 class ListProviderAppointmentsService {
   constructor(
-    @inject('AppointmentsRepository')
+    @inject("AppointmentsRepository")
     private appointmentsRepository: IAppointmentsRepository,
 
-    @inject('CacheProvider')
+    @inject("CacheProvider")
     private cacheProvider: ICacheProvider
   ) {}
 
@@ -29,7 +29,7 @@ class ListProviderAppointmentsService {
     month,
     day,
   }: IRequest): Promise<Appointment[]> {
-    const cacheKey = `provider-appointments:${provider_id}-${year}-${month}-${day}`;
+    const cacheKey = `provider-appointments:${provider_id}:${year}-${month}-${day}`;
 
     // Gets from cache
     let appointments = await this.cacheProvider.recover<Appointment[]>(
