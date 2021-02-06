@@ -53,7 +53,8 @@ class ListProviderMonthAvailabilityService {
       return {
         day: day,
         available:
-          isAfter(new Date(), compareDate) && appointmentsInDay.length < 10, // 10 = Max appointments number in a day
+          isAfter(compareDate, new Date(Date.now())) &&
+          appointmentsInDay.length < 10, // 10 = Max appointments number in a day
       };
     });
 
