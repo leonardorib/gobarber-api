@@ -6,7 +6,7 @@
 
 API developed to be used by an application for barber shops appointments booking. Developed along the GoStack bootcamp carried out by Rocketseat.
 
-The platform allow users to make appointments with specified date and hour with providers **through the native mobile app**, not allowing conflicts in the providers schedule. The providers can then check out their schedule on this **React web app**, seeing upcoming customers.
+The platform allow users to make appointments with specified date and hour with providers **through the native mobile app**, not allowing conflicts in the providers schedule. The providers can then check out their schedule on the **React web app**, seeing upcoming customers.
 
 ## :computer: Is it running?
 
@@ -39,7 +39,7 @@ Or check them up and running at:
 
 ## The author
 
-Made with :heart: by Leonardo Ribeiro.
+Made with :heart: by Leonardo Ribeiro. :brazil:
 
 Get in touch! :smiley:
 
