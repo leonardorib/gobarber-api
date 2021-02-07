@@ -29,7 +29,7 @@ Or check them up and running at:
 - Typescript
 - NodeJS
 - Express
-- TypeORM
+- TypeORM + PostgreSQL + MongoDB
 - Cache with Redis
 - Email sending with Amazon SES
 - Amazon S3 for storing images
