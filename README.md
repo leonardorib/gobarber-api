@@ -22,7 +22,7 @@ You can check the repositories here:
 Or check them up and running at:
 
 - [React Web Frontend Live Demo](https://gobarber-web-react.netlify.app/)
-- [React Native Mobile App at Playstore](https://play.google.com/store/apps/details?id=com.appgobarbermobilereactnative)
+- [React Native Mobile App at Google Play Store](https://play.google.com/store/apps/details?id=com.appgobarbermobilereactnative)
 
 ## :rocket: Technologies in the API
 
